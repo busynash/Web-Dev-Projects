@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ramen Shop</h2>
+ <img src="https://www.modernfarmhouseeats.com/wp-content/uploads/2021/03/chili-lime-shrimp-ramen-2-scaled.jpg" alt="image of a cute Cat" width="200px">
+    <img src="https://soomfoods.com/cdn/shop/articles/45_d115125d-8365-4865-af0e-5a8f42b577af_1600x.png?v=1750100505"width="300px">
+
+<form action="/action_page.php">
+  <label for="fname">Full name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" required><br>
+  <label for="phone">Phone Number:</label><br>
+  <input type="number" id="phone" name="phone" value="001" required><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" value="something@mail.com"><br>
+
+  <label for="Poptions">Protien Options:</label><br>
+  <select name = "Ramens">
+    <option value = "BEEF RAMEN">BEEF RAMEN</option>
+    <option value = "CHIKEN RAMEN">CHIKEN RAMEN</option>
+    <option value = "VEGETERIAN RAMEN">VEGETERIAN RAMEN</option>
+    <option value = "SPECIAL RAMEN">SPECIAL RAMEN</option>
+  </select><br><br>
+
+  <label for = "Options1" >
+    Delivery
+    <input type = "radio" id="Option1" name = "toggles" value = "1">
+    Pick Up
+    <input type = "radio" id = "options2" name = "toggles" value = "2" required> 
+</label>
+<br>
+
+<label for = "Extra Topping:">Extra Topping:</label>
+<input type ="checkbox" id="Mushrooms" name="Mushrooms" value="Mushrooms">Mushrooms
+<input type ="checkbox" id="Chiken" name="Chiken" value="Chiken">Chiken
+<input type ="checkbox" id="Beef" name="Beef" value= "Beef">Beef<br><br>
+
+
+
+<label for = "Add your requests:">Add your requests:</label><br><br>
+<textarea id="comments" name="comments" rows="4" cols="50">
+Enter other requests here...
+</textarea><br>
+  <input type="submit" value="Submit"><br>
+
+</form> 
+
+
+</body>
+</html>
