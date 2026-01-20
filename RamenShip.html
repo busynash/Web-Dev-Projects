@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html>
+<head>  
+  <title>Ramen Shop!</title>
+  <meta charset= "UTF-8">
+</head>
 <body>
 
 <h2>Ramen Shop</h2>
- <img src="https://www.modernfarmhouseeats.com/wp-content/uploads/2021/03/chili-lime-shrimp-ramen-2-scaled.jpg" alt="image of a cute Cat" width="200px">
-    <img src="https://soomfoods.com/cdn/shop/articles/45_d115125d-8365-4865-af0e-5a8f42b577af_1600x.png?v=1750100505"width="300px">
+ <img src="https://www.modernfarmhouseeats.com/wp-content/uploads/2021/03/chili-lime-shrimp-ramen-2-scaled.jpg" alt="image of a noodle" width="200">
+ <img src="https://soomfoods.com/cdn/shop/articles/45_d115125d-8365-4865-af0e-5a8f42b577af_1600x.png?v=1750100505" alt ="image of a cute noodle" width="300">
 
 <form action="/action_page.php">
   <label for="fname">Full name:</label><br>
-  <input type="text" id="fname" name="fname" value="John" required><br>
+  <input type="text" id="fname" name="fname" value="John something" required><br>
   <label for="phone">Phone Number:</label><br>
   <input type="number" id="phone" name="phone" value="001" required><br>
   <label for="email">Email:</label><br>
   <input type="email" id="email" name="email" value="something@mail.com"><br>
 
-  <label for="Poptions">Protien Options:</label><br>
+  <fieldset>
+  <legend>Proteins:</legend>
   <select name = "Ramens">
     <option value = "BEEF RAMEN">BEEF RAMEN</option>
     <option value = "CHIKEN RAMEN">CHIKEN RAMEN</option>
     <option value = "VEGETERIAN RAMEN">VEGETERIAN RAMEN</option>
     <option value = "SPECIAL RAMEN">SPECIAL RAMEN</option>
-  </select><br><br>
+  </select>
+</fieldset>
+  <br>
 
-  <label for = "Options1" >
+
+
+  <label for = "Option1" >
     Delivery
     <input type = "radio" id="Option1" name = "toggles" value = "1">
+  </label>
+
+  <label for = "Option2" >
     Pick Up
-    <input type = "radio" id = "options2" name = "toggles" value = "2" required> 
-</label>
+    <input type = "radio" id = "Option2" name = "toggles" value = "2" required> 
+  </label>
+
 <br>
+<fieldset>
+  <legend>Extra Topping</legend>
+  <label>
+    <input type="checkbox" name="topping" value="Mushrooms">
+    Mushrooms
+  </label>
+  <label>
+    <input type="checkbox" name="topping" value="Chicken">
+    Chicken
+  </label>
+  <label>
+    <input type="checkbox" name="topping" value="Beef">
+    Beef
+  </label>
+</fieldset>
 
-<label for = "Extra Topping:">Extra Topping:</label>
-<input type ="checkbox" id="Mushrooms" name="Mushrooms" value="Mushrooms">Mushrooms
-<input type ="checkbox" id="Chiken" name="Chiken" value="Chiken">Chiken
-<input type ="checkbox" id="Beef" name="Beef" value= "Beef">Beef<br><br>
 
-
-
-<label for = "Add your requests:">Add your requests:</label><br><br>
+<fieldset>
+<legend>comments:</legend>
 <textarea id="comments" name="comments" rows="4" cols="50">
 Enter other requests here...
+
 </textarea><br>
   <input type="submit" value="Submit"><br>
-
+</fieldset>
 </form> 
 
 
